@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ZACI-BIKE</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body class="container">
+        <div class="mensaje-alerta">
+        </div>
+
+        <div class="jumbotron row ">
+            <h2> ZACI-BIKE <small>Gestión de reservaciones</small></h2>
+
+
+            <div class="col-md-6">
+                <hr>
+                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar reservaciones</p>
+                <form id="vacas-form">
+                    <h5>Nombre/s:</h5>
+                    <input  class="form-control" type="text" id="nombre" placeholder="Nombre">
+                    <h5>Apellidos:</h5>
+                    <input  class="form-control" type="text" id="apellido" placeholder="Apellido">
+                    <h5>Correo:</h5>
+                    <input  class="form-control" type="email" id="correo" placeholder="Correo">
+                    <h5>Edad::</h5>
+                    <input  class="form-control" type="number" id="edad" placeholder="Edad">
+                    <h5>Fecha de reservación:</h5>
+                    <input  class="form-control" type="date" id="fecha_nacimiento" placeholder="Entrada">
+        
+                    <h5>Tipo de tour:</h5>
+                        <p>
+                          <select class="form-control" id="tour" placeholder="Tour">
+                            <option>Tour “Cultura”</option>
+                            <option>Tour de “Cenotes”</option>
+                            <option>Tour de “Aventura”</option>
+                          </select>
+                        </p>
+
+
+                    <br>
+                    <input type="submit" class="btn btn-success" value=" Guardar">
+                </form>
+                <br>
+                <br>
+                <div id="numeroVacas">
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <img style=" width:100%" src="logo.jpeg" alt="" />
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+        <table class="table" id="dbVacas-list">
+
+        </table>
+
+    </body>
+    <script type="text/javascript" src="funciones.js"></script>
+</html>
